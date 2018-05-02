@@ -1,22 +1,23 @@
 <html>
    <head>
       <title>rivermanfriend</title>
+      <meta charset="UTF-8"</meta>
       <script type = "text/javascript"
-         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+         src = "jquery-1.12.4.js">
       </script>
 		
       <script type = "text/javascript" 
-         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+         src = "jquery-ui.js">
       </script>
-		
+      <link rel="stylesheet" href="jquery-ui.css">
    </head>
 	
    <body>
-      <img style="display: block; margin: 0 auto;" src=massage.jpg class = "target"></img>
+      <img style="display: block; margin: 0 auto;" src=massage.jpg id="massage"></img>
       <script type = "text/javascript" language = "javascript">
    
          $(document).ready(function() {
-               $(".target").effect( "shake", {times:1000, distance:5}, 100000 );		
+               $("#massage").effect( "shake", {times:1000, distance:5}, 100000 );		
          });
 			
       </script>
